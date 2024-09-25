@@ -75,7 +75,6 @@ Token getNextToken(FILE *file) {
         token.type = TOKEN_NUMBER;
         return token;
     }
-
     if (ispunct(c)) {
         token.lexeme[i++] = c;
         token.lexeme[i] = '\0';
